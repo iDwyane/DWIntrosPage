@@ -25,6 +25,7 @@
 		79DA91892148FCE40027C015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DA91752148FCE30027C015 /* Assets.xcassets */; };
 		79DA918A2148FCE40027C015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79DA91782148FCE30027C015 /* LaunchScreen.storyboard */; };
 		79DA918B2148FCE40027C015 /* AppDelegate+DWIntrosPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DA917A2148FCE30027C015 /* AppDelegate+DWIntrosPage.m */; };
+		79DA918F214910C90027C015 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 79DA918E214910C90027C015 /* timg.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		79DA91792148FCE30027C015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79DA917A2148FCE30027C015 /* AppDelegate+DWIntrosPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+DWIntrosPage.m"; path = "DWIntrosPage/AppDelegate+DWIntrosPage.m"; sourceTree = "<group>"; };
 		79DA917B2148FCE40027C015 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = DWIntrosPage/HomeViewController.h; sourceTree = "<group>"; };
+		79DA918E214910C90027C015 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		79DA916A2148FCE30027C015 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				79DA918E214910C90027C015 /* timg.jpeg */,
 				79DA916B2148FCE30027C015 /* 02.jpg */,
 				79DA91742148FCE30027C015 /* 01.jpg */,
 				79DA91692148FCE30027C015 /* 02.jpg */,
@@ -288,6 +291,7 @@
 				79DA917C2148FCE40027C015 /* Info.plist in Resources */,
 				79DA91802148FCE40027C015 /* 02.jpg in Resources */,
 				79DA91812148FCE40027C015 /* gif01.gif in Resources */,
+				79DA918F214910C90027C015 /* timg.jpeg in Resources */,
 				79DA918A2148FCE40027C015 /* LaunchScreen.storyboard in Resources */,
 				79DA91832148FCE40027C015 /* gif03.gif in Resources */,
 				79DA91842148FCE40027C015 /* gif04.gif in Resources */,

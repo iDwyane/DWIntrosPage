@@ -33,7 +33,7 @@
 
 - (UIViewController *)setupStaticVC {
     DWIntrosPageContentViewController *page1 = [DWIntrosPageContentViewController introsPageWithBackgroundImage:[UIImage imageNamed:@"01"]];
-    DWIntrosPageContentViewController *page2 = [DWIntrosPageContentViewController introsPageWithBackgroundImageWithName:@"021.jpg"];
+    DWIntrosPageContentViewController *page2 = [DWIntrosPageContentViewController introsPageWithBackgroundImageWithName:@"02.jpg"];
     DWIntrosPageContentViewController *page3 = [DWIntrosPageContentViewController introsPageWithBackgroundImageWithName:@"03"];
     DWIntrosPageContentViewController *page4 = [DWIntrosPageContentViewController introsPageWithBackgroundImageWithName:@"01"];
     DWIntrosPagesViewController *introsPage = [DWIntrosPagesViewController dwIntrosPagesWithPageArray:@[page1, page2, page3, page4]];
