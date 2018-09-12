@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DWGuidePage"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "An iOS framework to easily create a beautiful and powerful guide page."
 
   # This description is used to generate tags and improve search results.
