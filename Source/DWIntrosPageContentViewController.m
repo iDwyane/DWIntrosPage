@@ -1,13 +1,13 @@
 //
-//  DWGuidePageContentViewController.m
-//  DWGuidePage
+//  DWIntrosPageContentViewController.m
+//  DWIntrosPage
 //
 //  Created by Dwyane on 2018/8/31.
 //  Copyright © 2018年 idwyane. All rights reserved.
 //
 
-#import "DWGuidePageContentViewController.h"
-#import "DWGuidePagesViewController.h"
+#import "DWIntrosPageContentViewController.h"
+#import "DWIntrosPagesViewController.h"
 
 // 移位：eg:1<<i的结果是1乘以2的i次方
 #define dw_FOUR_shift(c1,c2,c3,c4) ((uint32_t)(((c4) << 24) | ((c3) << 16) | ((c2) << 8) | (c1)))
@@ -40,7 +40,7 @@ static NSString *_imagePathExtension(CFDataRef data) {
     
 }
 
-@interface DWGuidePageContentViewController ()
+@interface DWIntrosPageContentViewController ()
 {
     UIView *view;
 }
@@ -49,7 +49,7 @@ static NSString *_imagePathExtension(CFDataRef data) {
 @property (nonatomic, assign) CGFloat bgImgHeight;
 @end
 
-@implementation DWGuidePageContentViewController
+@implementation DWIntrosPageContentViewController
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -71,11 +71,11 @@ static NSString *_imagePathExtension(CFDataRef data) {
 }
 
 
-+ (instancetype)guidePageWithBackgroundImage:(UIImage *)bgImage {
++ (instancetype)introsPageWithBackgroundImage:(UIImage *)bgImage {
     return [[self alloc] initWithBackgroundImage:bgImage];
 }
 
-+ (instancetype)guidePageWithBackgroundImageWithName:(NSString *)imgName {
++ (instancetype)introsPageWithBackgroundImageWithName:(NSString *)imgName {
     if ([imgName.pathExtension isEqualToString:@"jpg"] || [imgName.pathExtension isEqualToString:@"png"]) {
         return [[self alloc] initWithBackgroundImageWithName:imgName];
     }

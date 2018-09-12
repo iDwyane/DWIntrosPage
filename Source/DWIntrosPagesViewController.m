@@ -1,30 +1,30 @@
 //
-//  DWGuidePagesViewController.m
-//  DWGuidePage
+//  DWIntrosPagesViewController.m
+//  DWIntrosPage
 //
 //  Created by Dwyane on 2018/9/3.
 //  Copyright © 2018年 idwyane. All rights reserved.
 //
 
-#import "DWGuidePagesViewController.h"
+#import "DWIntrosPagesViewController.h"
 
 static CGFloat const kPageControlHeight = 35;
 static CGFloat const kSkipButtonWidth = 100;
 static CGFloat const kSkipButtonHeight = 35;
 
 
-@interface DWGuidePagesViewController ()<UIPageViewControllerDelegate, UIPageViewControllerDataSource, UIScrollViewDelegate>
+@interface DWIntrosPagesViewController ()<UIPageViewControllerDelegate, UIPageViewControllerDataSource, UIScrollViewDelegate>
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
 @property (nonatomic, assign) CGFloat historyX;
 
-@property (nonatomic, strong) DWGuidePageContentViewController *currentPage;
-@property (nonatomic, strong) DWGuidePageContentViewController *nextPage;
+@property (nonatomic, strong) DWIntrosPageContentViewController *currentPage;
+@property (nonatomic, strong) DWIntrosPageContentViewController *nextPage;
 /** block has called */
 @property (nonatomic, assign) BOOL calledBlock;
 @end
 
-@implementation DWGuidePagesViewController
+@implementation DWIntrosPagesViewController
 
 //Lazy method.
 - (NSMutableArray *)dataSource {
@@ -40,7 +40,7 @@ static CGFloat const kSkipButtonHeight = 35;
     [self setupView];
 }
 
-+ (instancetype)dwGuidePagesWithPageArray:(NSArray *)pageArray {
++ (instancetype)dwIntrosPagesWithPageArray:(NSArray *)pageArray {
     return [[self alloc] initWithPageArray:pageArray];
 }
 
@@ -90,8 +90,8 @@ static CGFloat const kSkipButtonHeight = 35;
     }
     
     for (UIViewController *vc in self.viewControllers) {
-        if ([vc isKindOfClass:[DWGuidePageContentViewController class]]) {
-            DWGuidePageContentViewController *contentVC = (DWGuidePageContentViewController *)vc;
+        if ([vc isKindOfClass:[DWIntrosPageContentViewController class]]) {
+            DWIntrosPageContentViewController *contentVC = (DWIntrosPageContentViewController *)vc;
             contentVC.delegate = self;
         }
     }
@@ -208,11 +208,11 @@ static CGFloat const kSkipButtonHeight = 35;
 
 }
 
-#pragma mark ------ GuidePageContentDelegate ------
-- (void)setCurrentPage:(DWGuidePageContentViewController *)currentPage {
+#pragma mark ------ IntrosPageContentDelegate ------
+- (void)setCurrentPage:(DWIntrosPageContentViewController *)currentPage {
     _currentPage = currentPage;
 }
-- (void)setNextPage:(DWGuidePageContentViewController *)nextPage {
+- (void)setNextPage:(DWIntrosPageContentViewController *)nextPage {
     _nextPage = nextPage;
 }
 

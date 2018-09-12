@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "DWGuidePage"
+  s.name         = "DWIntrosPage"
   s.version      = "1.0.1"
   s.summary      = "An iOS framework to easily create a beautiful and powerful guide page."
 
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   An iOS framework to easily create a beautiful and powerful guide page with only a few lines of code.
                    DESC
 
-  s.homepage     = "https://github.com/iDwyane/DWGuidePage"
+  s.homepage     = "https://github.com/iDwyane/DWIntrosPage"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/iDwyane/DWGuidePage.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/iDwyane/DWIntrosPage.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
