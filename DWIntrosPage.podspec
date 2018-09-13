@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DWIntrosPage"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "An iOS framework to easily create a beautiful and powerful guide page."
 
   # This description is used to generate tags and improve search results.
